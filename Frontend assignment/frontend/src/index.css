@@ -9,6 +9,26 @@
   display: none; /* Chrome, Safari and Opera */
 }
 
+.underline-from-center {
+  position: relative;
+}
+
+.underline-from-center::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #e2e8f0; /* slate-200 */
+  transition: width 0.3s ease;
+}
+
+.underline-from-center:hover::before {
+  width: 70%;
+}
+
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -1,9 +1,9 @@
-import Reviewcard from "./utilities/Reviewcard";
+import Reviewcard from "../utilities/Reviewcard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from "react";
 
-export default function Maincontent(){
+export default function Home(){
 
     const scrollRef = useRef(null);
 
@@ -21,11 +21,11 @@ export default function Maincontent(){
 
     return (
         <>
-            <div className="bg-slate-950 w-full min-h-screen flex flex-col items-center overflow-auto ">
+            <div className="bg-slate-950 w-full min-h-screen flex flex-col items-center overflow-auto pt-8 ">
                 {/* Welcome section */}
                 <div className="flex flex-col items-center my-6">
                     {/* Heading */}
-                    <div className="md:text-4xl sm:text-3xl text-2xl my-3 font-semibold text-white text-shadow-amber-50">Welcome to <i className="text-amber-200">BrandVibe</i></div>
+                    <div className="md:text-4xl sm:text-3xl text-2xl my-3 font-bold text-white text-shadow-amber-50">Welcome to <i className="text-amber-200">BrandVibe</i></div>
 
                     {/* Content */}
                     <div className="w-[75%] h-auto p-4 text-white text-center">
