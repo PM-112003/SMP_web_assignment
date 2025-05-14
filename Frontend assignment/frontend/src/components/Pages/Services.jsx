@@ -1,6 +1,13 @@
+import { useState } from "react";
 import Servicecard from "../utilities/Servicecard";
 
 export default function Services(){
+    const [imageone, setImageone] = useState("./Services page images/Socialmediamarketing.jpeg");
+    const [imagetwo, setImagetwo] = useState("./Services page images/SEO2.webp");
+    const [imagethree, setImagethree] = useState("./Services page images/Paidads.webp");
+    const [imagefour, setImagefour] = useState("./Services page images/Contentmarketing.webp");
+    const [servicenames, setServicenames] = useState(["Social media marketing", "Search Engine Optimisation",
+        "Paid adverstisment", "Content Marketing"]);
 
     return(
         <>
@@ -13,10 +20,10 @@ export default function Services(){
                 
                 {/* Services cards */}
                 <div className="flex flex-wrap items-center justify-center w-[60%] gap-10 h-auto mb-10">
-                    <Servicecard></Servicecard>
-                    <Servicecard></Servicecard>
-                    <Servicecard></Servicecard>
-                    <Servicecard></Servicecard>
+                    <Servicecard image={imageone} service={servicenames[0]}></Servicecard>
+                    <Servicecard image={imagetwo} service={servicenames[1]}></Servicecard>
+                    <Servicecard image={imagethree} service={servicenames[2]}></Servicecard>
+                    <Servicecard image={imagefour} service={servicenames[3]}></Servicecard>
                 </div>
             </div>
         </>

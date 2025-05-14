@@ -6,7 +6,7 @@ export default function Reviewcard(){
 
     return(
         <>
-            <div className="w-60 h-auto shrink-0 p-3 border-2 mx-5 my-2 border-white flex flex-col items-start rounded-sm rounded-tr-4xl">
+            <div className="sm:w-60 w-32 h-auto shrink-0 p-3 border-2 mx-5 my-2 border-white flex flex-col items-start rounded-sm rounded-tr-4xl">
                 {/* Icon */}
                 <FontAwesomeIcon icon={faQuoteLeft} className="text-gray-400 text-2xl mb-2 " />
 

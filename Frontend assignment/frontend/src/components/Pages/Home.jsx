@@ -5,6 +5,7 @@ import { useRef } from "react";
 
 export default function Home(){
 
+
     const scrollRef = useRef(null);
 
     const scrollLeft = () => {
@@ -29,10 +30,10 @@ export default function Home(){
 
                     {/* Content */}
                     <div className="w-[75%] h-auto p-4 text-white text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Exercitationem dicta quia laboriosam quam ut animi temporibus? 
-                        Porro doloremque repudiandae corporis. Nostrum itaque, nemo in,
-                         soluta nihil dignissimos voluptatibus, neque culpa provident totam recusandae eos.
+                        Welcome to BrandVibe — where creativity meets conversion.
+                        We help you grow your brand, boost online visibility, and drive results through powerful digital strategies.
+                        From SEO and social media to performance marketing and content creation, our team is dedicated to taking your
+                        business to the next level. Let’s turn your ideas into impactful digital experiences!
                     </div>
                 </div>
 
@@ -44,36 +45,29 @@ export default function Home(){
 
                     {/* Content */}
                     <div className="w-[75%] h-auto p-4 text-white text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Exercitationem dicta quia laboriosam quam ut animi temporibus? 
-                        Porro doloremque repudiandae corporis. Nostrum itaque, nemo in,
-                         soluta nihil dignissimos voluptatibus, neque culpa provident totam recusandae eos.
+                        At BrandVibe, our mission is simple — empower businesses to thrive in the digital world. 
+                        We aim to deliver measurable growth through innovative marketing solutions, data-driven strategies, 
+                        and creative storytelling. Whether you're a startup or an established brand, we’re committed to amplifying your voice, 
+                        increasing your reach, and ensuring your success in the ever-evolving online landscape. Your goals become our purpose.
                     </div>
-                    <div className=" text-slate-200">Check out our services <a href="/" className="text-sky-300 hover:underline">here</a></div>
                 </div>
 
 
                 {/* Testimonials section */}
 
-                <div className="flex flex-col items-center my-10 w-[85%] p-3 pl-4">
+                <div className="flex flex-col items-center my-10 sm:w-[85%] w-full p-3 pl-4">
                     {/* Heading */}
                     <div className="md:text-4xl sm:text-3xl text-2xl mb-3 font-semibold text-white text-shadow-amber-50">Reviews</div>
 
-                    <div className="flex items-center h-auto w-[80%] p-4 gap-2 overflow-hidden">
+                    <div className="flex items-center h-auto sm:w-[80%] w-full p-4 gap-2 overflow-hidden">
       
-                        {/* Chevron Left Button */}
-                        <div
-                            className="h-56 w-12 shrink-0 flex items-center justify-center rounded-md"
-                            
-                        >
+                       
+                        <div className="h-56 w-12 shrink-0 flex items-center justify-center rounded-md">
                             <FontAwesomeIcon icon={faChevronLeft} className="text-white text-xl cursor-pointer" onClick={scrollLeft}/>
                         </div>
 
                         {/* Scrollable container */}
-                        <div
-                            ref={scrollRef}
-                            className="flex overflow-x-auto gap-4 scroll-smooth scrollbar-hide w-fulll"
-                        >
+                        <div ref={scrollRef} className="flex overflow-x-auto gap-4 scroll-smooth scrollbar-hide w-full">
                             <Reviewcard />
                             <Reviewcard />
                             <Reviewcard />
