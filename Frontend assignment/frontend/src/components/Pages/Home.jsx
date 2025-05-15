@@ -2,6 +2,7 @@ import Reviewcard from "../utilities/Reviewcard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from "react";
+import reviews from "../../reviewdata";
 
 export default function Home(){
 
@@ -68,11 +69,14 @@ export default function Home(){
 
                         {/* Scrollable container */}
                         <div ref={scrollRef} className="flex overflow-x-auto gap-4 scroll-smooth scrollbar-hide w-full">
-                            <Reviewcard />
-                            <Reviewcard />
-                            <Reviewcard />
-                            <Reviewcard />
-                            <Reviewcard />
+                            {reviews.map((item, index) => (
+                                <Reviewcard
+                                key={index}
+                                name={item.name}
+                                role={item.role}
+                                review={item.review}
+                                />
+                            ))}
                         </div>
 
                         {/* Right Scroll Button */}

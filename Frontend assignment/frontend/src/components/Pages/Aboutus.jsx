@@ -15,25 +15,23 @@ export default function Aboutus(){
                 <div className="flex flex-wrap flex-col items-center text-white h-auto w-[80%] gap-[10px] p-4">
                     {/* Picture */}
                     <div className="h-auto w-[80%] sm:w-[300px] md:w-[400px] p-2 ">
-                        <img src="./Services page images/Socialmediamarketing.jpeg" alt="" className="contain-content h-full w-full rounded-xl"/>
+                        <img src="./Services page images/About Us.png" alt="" className="contain-content h-full w-full rounded-xl"/>
                     </div>
 
                     <div className="h-auto w-full p-2 ">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Atque, assumenda dolorum voluptatibus dolorem accusamus totam sequi sed.
-                        Voluptatibus perspiciatis est molestias aspernatur non, delectus ratione ea,
-                        vitae dignissimos at suscipit recusandae facilis laborum? Nisi, exercitationem.
+                        At BrandVibe, we believe every brand has a story worth telling—
+                        and we’re here to help you tell it louder, better, and smarter. 
+                        Founded with the vision of transforming businesses into digital powerhouses, 
+                        BrandVibe blends creativity with data-driven strategies to deliver impactful results.
                         <br /> <br />
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                         Illum molestiae maiores saepe minus mollitia amet tempora ipsa sit unde
-                          explicabo impedit possimus quasi adipisci ratione, ex atque expedita voluptate veniam?
-                         Et numquam, sed omnis doloribus rem cupiditate quidem saepe quibusdam voluptatum
-                          culpa est quos iusto pariatur debitis voluptatem optio inventore.
+                        We specialize in Social Media Marketing, SEO, Paid Advertisements, 
+                        and Content Marketing, offering tailor-made solutions that align with your business goals. 
+                        Whether you're a startup looking to build visibility or an established brand aiming to scale, 
+                        we craft campaigns that connect with the right audience at the right time.
                         <br /> <br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, molestiae.
-                         Error porro consequuntur praesentium suscipit tempore mollitia assumenda a, 
-                         ut perspiciatis ratione voluptates minima ipsam possimus repellat quas 
-                         quaerat eum fuga dignissimos. Fugiat, ipsa commodi.
+                        Our team is a passionate mix of marketers, designers, and strategists 
+                        who thrive on innovation and results. At BrandVibe, your growth is our 
+                        mission—and we don’t just market brands, we build their vibe.
                     </div>
                 </div>
                 

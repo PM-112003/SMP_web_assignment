@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
-export default function Reviewcard(){
+export default function Reviewcard({name, role, review}){
 
     return(
         <>
@@ -12,14 +12,12 @@ export default function Reviewcard(){
 
                 {/* Review content */}
                 <p className="text-sm mb-2 text-slate-300">
-                This product is amazing! Totally exceeded my expectations and the support was great
-                . Necessitatibus in quasi veritatis nesciunt aperiam nemo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos animi earum.
+                    {review}
                 </p>
 
                 {/* Reviewer name */}
                 <p className="text-xs text-slate-500 flex justify-between w-full">
-                    <span>— John Doe</span>
+                    <span>— {name}, {role}</span>
                     <FontAwesomeIcon icon={faXTwitter} className="text-slate-200 text-2xl" />
                 </p>
             </div>
