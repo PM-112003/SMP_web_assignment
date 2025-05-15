@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+</head>
+<body>
+
+  <h2>Welcome to Quora Clone, <%= user.name %>!</h2>
+
+    <h3>Create a New Post</h3>
+    <form id="postForm">
+    <input type="text" name="title" placeholder="Post Title" required /><br/>
+    <textarea name="content" placeholder="What's on your mind?" required></textarea><br/>
+    <button type="submit">Post</button>
+    </form>
+
+    <hr/>
+
+    <h3>All Posts</h3>
+    <ul id="postsList">
+    <% posts.forEach(post => { %>
+    <li>
+    <h4><%= post.title %></h4>
+    <p><%= post.content %></p>
+    <small>by <%= post.authorName %></small>
+    </li>
+    <hr/>
+    <% }) %>
+    </ul>
+
+</body>
+</html>
+
+
+
+<script>
+  const postForm = document.getElementById('postForm');
+  postForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(postForm);
+    const data = Object.fromEntries(formData.entries());
+
+    const res = await fetch('/api/posts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+    alert(result.message);
+    if (res.ok) {
+      location.reload();
+    }
+  });
+</script>

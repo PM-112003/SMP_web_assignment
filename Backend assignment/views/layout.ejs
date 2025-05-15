@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Quora Clone</title>
+</head>
+<body>
+  <nav>
+    <% if(user){ %>
+      Hello, <%= user.name %> | <a href="/logout">Logout</a>
+    <% } else { %>
+      <a href="/signin">Sign In</a> | <a href="/signup">Sign Up</a>
+    <% } %>
+    <hr />
+  </nav>
+
+  <%- body %>
+</body>
+</html>
